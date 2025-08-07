@@ -4,50 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Flip Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="flip-card">
+    <main class="container">
+        <article class="flip-card">
             <div class="flip-card-inner">
                 <!-- Front of the card -->
                 <div class="flip-card-front">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop&crop=face" alt="John Doe Profile" class="profile-image">
                     <div class="card-content">
-                        <h2>Frontend Developer</h2>
-                        <div class="avatar">
-                            <div class="avatar-circle">JD</div>
-                        </div>
                         <h3>John Doe</h3>
-                        <p>Hover to see more details</p>
+                        <p class="tagline">Frontend Developer</p>
                     </div>
                 </div>
                 
                 <!-- Back of the card -->
                 <div class="flip-card-back">
                     <div class="card-content">
-                        <h2>Contact Info</h2>
-                        <div class="info-list">
-                            <div class="info-item">
-                                <span class="icon">📧</span>
-                                <span>john.doe@email.com</span>
-                            </div>
-                            <div class="info-item">
-                                <span class="icon">📱</span>
-                                <span>+1 (555) 123-4567</span>
-                            </div>
-                            <div class="info-item">
-                                <span class="icon">🌐</span>
-                                <span>www.johndoe.dev</span>
-                            </div>
-                            <div class="info-item">
-                                <span class="icon">📍</span>
-                                <span>San Francisco, CA</span>
-                            </div>
+                        <h3>About Me</h3>
+                        <p class="description">
+                            Passionate frontend developer with 5+ years of experience creating beautiful, responsive web applications using modern technologies like React, Vue, and CSS3.
+                        </p>
+                        <div class="skills">
+                            <span class="skill">JavaScript</span>
+                            <span class="skill">React</span>
+                            <span class="skill">CSS3</span>
                         </div>
+                        <button class="cta-button">Learn More</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </article>
+    </main>
 </body>
 </html>
